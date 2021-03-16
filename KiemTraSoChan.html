@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KiemTraSoChan</title>
 </head>
+
 <body>
     <form>
         <p>Nhập số: </p>
@@ -13,18 +15,17 @@
         <input type="button" onclick="KiemTraSoChan()" value="Kiểm Tra">
     </form>
     <script>
-        function KiemTraSoChan()
-        {
-            let number = document.getElementById("num").value;
-            if(number % 2 == 0)
-            {
-                alert(number + " là số chẵn");
+        function KiemTraSoChan() {
+            let number = document.getElementById("num").value
+            let dieuKien = number % 2
+            if (dieuKien == 0) {
+                alert(`${number} là số chẵn `);
             }
-            else
-            {
-                alert(number + " là số lẻ");
+            else {
+                alert(`${number} là số lẻ `);
             }
         }
     </script>
 </body>
+
 </html>
