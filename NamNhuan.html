@@ -17,7 +17,10 @@
     <script>
         function KiemTraNamNhuan() {
             let year = document.getElementById("year").value
-            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            let namChiaHetCho4 = (year % 4)
+            let namKhongChiaHetCho100 = (year % 100)
+            let namChiaHetCho400 = (year % 400)
+            if ((namChiaHetCho4 == 0 && namKhongChiaHetCho100 != 0) || namChiaHetCho400 == 0) {
                 alert(year + ' is a leap year');
             }
             else alert(year + ' is not a leap year');
